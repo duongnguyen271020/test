@@ -1,0 +1,30 @@
+<!-- BEGIN content -->
+<div id="content">
+
+    <!-- begin post -->
+    <div class="post" *ngFor="let d of contentDisplay">
+        <div class="thumb">
+            <a href="#">
+                <img src="{{d.urlToImage}}" alt="" />
+            </a>
+        </div>
+        <h2>
+            <a href="#">{{d.title}}
+            </a>
+        </h2>
+        <p class="date">{{d.publishedAt}}</p>
+        <p>{{d.content}}</p>
+        <a class="continue" href="{{d.url}}">Continue Reading</a> </div>
+    <!-- end post -->
+    <!-- begin post navigation -->
+    <div class="postnav">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        <div class="break"></div>
+    </div>
+    <!-- end post navigation -->
+</div>
+<!-- END content -->
